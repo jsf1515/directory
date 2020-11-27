@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    padding-top: 4.5rem ;
+}
+
+footer {
+    padding-top: 4.5rem ;
+}
+
+main {
+    padding-bottom: 1rem ;
+}
+
+.padded-image{
+    padding: 20px ;
+}
