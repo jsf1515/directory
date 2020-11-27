@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<Object>( this.jsonURL ).subscribe(
       data => { 
-        
         function sortByKey(array, key) {
           return array.sort(function(a, b) {
             var x = a[key]; var y = b[key];
