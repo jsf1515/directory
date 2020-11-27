@@ -37,10 +37,8 @@ export class AppComponent implements OnInit {
     this.http.get<Object>( this.jsonURL ).subscribe(
       data => { 
         
-        function sortByKey(array, key)
-        {
-          return array.sort(function(a, b)
-          {
+        function sortByKey(array, key) {
+          return array.sort(function(a, b) {
             var x = a[key]; var y = b[key];
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
           });
