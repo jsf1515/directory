@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   _personPosition : string = "" ;
   
   constructor( private http: HttpClient ) {
-    this.jsonURL = "../assets/directory.json" ;
+    this.jsonURL = "assets/directory.json" ;
   }
 
   bindBio(personInformation){
