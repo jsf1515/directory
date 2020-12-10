@@ -6,15 +6,14 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="/index.html">Directory</a>
                 </li><!-- /.nav-item .active -->
-            </ul><!-- /. navbar-nav .mr-auto .mb-2 .mb-md-0 -->
+            </ul><!-- /. navbar-nav .me-auto .mb-2 .mb-md-0 -->
         
             <form class="d-flex">
                 <input [(ngModel)]="searchString" name="searchString" class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div><!-- /.collapse .navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -34,7 +33,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <button (click)="bindBio(person)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#entryModal">View Bio</button>
+                    <button (click)="bindBio(person)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#entryModal">View Bio</button>
                 </div>
             </div>
         </div><!-- /.col -->
@@ -51,11 +50,11 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div><!-- /.modal-header -->
 
             <div class="modal-body">
-                <img height="256px;" src="assets/images/{{ _personPhotoFileName }}" class="rounded float-left padded-image" alt="bio photo for {{ _personName }}">
+                <img height="256px;" src="assets/images/{{ _personPhotoFileName }}" class="rounded float-start padded-image" alt="bio photo for {{ _personName }}">
                 <h4>{{ _personName }}</h4>
 
                 <ul class="list-unstyled">
